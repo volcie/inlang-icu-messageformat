@@ -1,7 +1,7 @@
 import { type Static, Type } from "@sinclair/typebox";
 
 const pathPatternString = Type.String({
-	pattern: ".\\{locale}.*\\.json$",
+	pattern: ".\\{(locale|languageTag)}.*\\.json$",
 	examples: ["./messages/{locale}.json", "./i18n/{locale}.json"],
 	title: "Path to language files",
 	description:
