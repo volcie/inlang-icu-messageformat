@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { toBeImportedFiles } from "./toBeImportedFiles";
+import { toBeImportedFiles } from "./toBeImportedFiles.js";
 
 test("toBeImportedFiles should work with locale as setting", async () => {
 	const result = await toBeImportedFiles({
